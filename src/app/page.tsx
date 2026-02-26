@@ -1,6 +1,17 @@
 // app/page.tsx
 
-const projects = [
+type ProjectLinkKey = "live" | "github" | "bot";
+
+type Project = {
+  title: string;
+  tagline: string;
+  highlights: string[];
+  stack: string[];
+  links: Partial<Record<ProjectLinkKey, string>>;
+  badge?: string;
+};
+
+const projects: Project[] = [
   {
     title: "FormForge",
     tagline: "Full-stack form builder with templates, submissions, analytics, ranking, and RBAC.",
@@ -89,9 +100,9 @@ function Card({
   tagline: string;
   highlights: string[];
   stack: string[];
-  links: Record<string, string>;
+  links: Partial<Record<ProjectLinkKey, string>>;
 }) {
-  const linkEntries = Object.entries(links);
+  const linkEntries = Object.entries(links).filter(([, url]) => typeof url === "string");
   return (
       <div className="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-sm transition hover:-translate-y-1 hover:bg-white/[0.06]">
         <div className="flex items-start justify-between gap-4">
