@@ -194,7 +194,7 @@ export default function Page() {
               </p>
 
               <p className="mt-5 text-base text-white/75">
-                I build backend services, Telegram automation systems, and AI-powered media pipelines,
+                I build backend services, automation systems, and AI-powered media pipelines
                 with a strong focus on reliability and production-ready architecture.
               </p>
 
@@ -204,6 +204,14 @@ export default function Page() {
                     className="rounded-xl bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-white/90"
                 >
                   View Projects
+                </a>
+                <a
+                    href="/Orifkhon_Kilichev_Resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-xl bg-white/10 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/20"
+                >
+                  Resume
                 </a>
                 <a
                     href="#contact"
