@@ -251,7 +251,7 @@ export default function Page() {
           <section id="projects" className="mt-16">
             <div className="flex items-end justify-between gap-4">
               <h2 className="text-2xl font-semibold">Featured Projects</h2>
-              <p className="text-sm text-white/60">4 projects • all live or running on server</p>
+              <p className="text-sm text-white/60">5 projects • all live or running on server</p>
             </div>
 
             <div className="mt-6 grid gap-5 md:grid-cols-2">
