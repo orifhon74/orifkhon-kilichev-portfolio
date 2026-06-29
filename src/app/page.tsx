@@ -13,6 +13,21 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "InvoiceFlow",
+    tagline: "Subscription invoicing SaaS — branded invoices, shareable pay-links, and paid/overdue tracking.",
+    highlights: [
+      "Stripe Checkout + webhooks for recurring billing (signature verification, cancel-at-period-end)",
+      "JWT + bcrypt auth (httpOnly cookies), email verification & password reset via Resend on a verified domain",
+      "Multi-tenant SQLite schema with per-user isolation; CI/CD on Render + 32-test integration suite",
+    ],
+    stack: ["Node.js", "Express", "SQLite", "Stripe", "JWT", "Resend", "Render"],
+    links: {
+      live: "https://invoiceflowapp.app",
+      github: "https://github.com/orifhon74/invoiceflow",
+    },
+    badge: "Live",
+  },
+  {
     title: "FormForge",
     tagline: "Full-stack form builder with templates, submissions, analytics, ranking, and RBAC.",
     highlights: [
